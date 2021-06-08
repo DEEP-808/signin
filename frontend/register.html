@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .container{
+            padding-left: 25%;
+            padding-top: 1%;
+        }
+
+        input[type=text], input[type=password],input[type=email] {
+            width: 25%;
+            padding: 15px;
+            margin: 5px 0 22px 0;
+            display: inline-block;
+            border: none;
+            background-color: gainsboro;
+        }
+        body{
+            font-family: monospace;
+            font-size: larger;
+        }
+        .end{
+            text-align: center;
+            font-family: monospace;
+            height: 30px;
+            width: 80px;
+        }
+        .heading{
+            font-size: xx-large;
+        }
+        .signup{
+            padding-top: 20px;
+        }
+    </style>
+    <title>register</title>
+</head>
+<body>
+    <div class="container">
+        <i class="fa fa-user-plus"></i>
+        <span class="heading">Sign UP</span>
+       
+        <form  method="post" action="/register" class="signup">
+            <div class="name">
+                <label>FirstName</label><br>
+                <input type="text" name="username" placeholder="Enter FirstName">
+                <br>
+            </div>
+            <div class="email">
+                <i class="fa fa-envelope"></i>
+                <label for="email">Email</label><br>
+                <input type="email" name="email" placeholder="Enter email"><br>
+            </div>
+            <div class="password">
+                <label for="password">password</label><br>
+                <input type="text" name="password" placeholder="password">
+            </div>
+            <button type="submit" class="end" >Sign Up</button>
+        </form>
+        <a href="/">Login</a>
+    </div>
+</body>
+</html>

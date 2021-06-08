@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <style>
+        .container{
+            font-family: monospace;
+            padding-left: 35%;
+            padding-top: 15%;
+        }
+        .email{
+            padding-bottom: 20px;
+        }
+        #username{
+            font-size: larger;
+            padding-right: 20px;
+            padding-bottom: 20px;
+        }
+
+        #pass{
+            font-size: larger;
+            padding-right: 69px;
+        }
+        .lgbtn{
+            width: 300px;
+            height: 40px;
+            font-family: monospace;
+            font-size: 15px;
+            text-align: center;
+            background-color: #3366ff;
+        }
+        .signup{
+            padding-top: 20px;
+        }
+        .sgnbtn{
+            width: 300px;
+            height: 40px;
+            font-family: monospace;
+            font-size: 15px;
+            text-align: center;
+            background-color: #ff471a;
+            ;
+        }
+        .password{
+            padding-bottom: 20px;
+        }
+    </style>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css"> 
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Login</h2>
+        <form action="/login"  method="POST"  class="login">
+            <div class="email">
+                <form action="" class="info">
+                    <i class="fa fa-envelope"></i>
+                    <label id="username">Username/email</label>
+                    <input type="text">
+                </form>
+            </div>
+            <div class="password">
+                <form >   
+                    <i class="fa fa-lock" style="transform:scale(1.2);"></i>
+                    <label id="pass" >Password</label>
+                    <input type="password">
+                </form>
+            </div>
+            <input type="submit" value="Login" class="lgbtn"><br><br>
+            <a href="/google" class="btn btn-danger"><span class="fa fa-google-plus"></span> Google</a>
+            <form action="/signup" type="submit" class="signup">
+                <button class="sgnbtn">signup</button>
+            </form>
+        </form>
+    </div>
+</body>
+</html>
