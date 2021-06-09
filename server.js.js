@@ -16,13 +16,13 @@ app.use(passport.initialize());
 app.use(passport.session());
 
 app.get('/', (req, res) => {
-      res.sendFile(__dirname+'/views/pages/login.html')
+      res.sendFile(__dirname+'/frontend/html/login.html')
     }
 )
 app.get('/fail', (req, res) => res.send('log in failed :('))
 
 app.get('/success',(req, res) =>{
-    res.render(__dirname + "/views/pages/page.html",{name:req.user.displayName,email:req.user.email});
+    res.render(__dirname + "/frontend/html/page.html",{name:req.user.displayName,email:req.user.email});
 })
 
 app.get('/google', passport.authenticate('google', { scope: ['profile', 'email'] }));
