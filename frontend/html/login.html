@@ -54,9 +54,30 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
+    
     <div class="container">
         <h2>Login</h2>
-            <a href="/google" class="btn btn-danger"><span class="fa fa-google-plus"></span> Google</a>
+        <form action="" class="login">
+            <div class="email">
+                <form action="" class="info">
+                    <i class="fa fa-envelope"></i>
+                    <label id="username">Username/email</label>
+                    <input type="text">
+                </form>
+            </div>
+            <div class="password">
+                <form >   
+                    <i class="fa fa-lock" style="transform:scale(1.2);"></i>
+                    <label id="pass" >Password</label>
+                    <input type="password">
+                </form>
+            </div>
+            <button type="submit"  class="lgbtn">LogIN</button><br><br>
+            <a href="/google" class="btn btn-danger"><span class="fa fa-google-plus"></span> Google</a><br><br>
+        </form>
+        <form action="/register">
+            <button type="submit" class="sgnbtn">signup</button>
+        </form>
     </div>
 </body>
 </html>

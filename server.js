@@ -7,7 +7,7 @@ require('./passport-setup');
 app.use(cookieSession({
     name: 'tuto-session',
     keys: ['key1', 'key2']
-  }))
+}))
 
 app.set('view engine','ejs')
 
@@ -33,10 +33,14 @@ app.get('/google/callback', passport.authenticate('google', { failureRedirect: '
   }
 );
 
+app.get('/register',(req,res)=>{
+  res.sendFile(__dirname+"/frontend/html/register.html")
+})
+
 app.get('/logout', (req, res) => {
     req.session = null;
     req.logout();
     res.redirect('/');
 })
 
-app.listen(3000, () => console.log('server starte at localhost:3000'));
+app.listen(3000, () => console.log('server started at localhost:3000'));
